@@ -1,0 +1,63 @@
+.tabs {
+  position: relative;
+  top: 100px;
+  font-family: Arial, sans-serif;
+  width: fit-content;
+  margin: auto;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+  border-radius: 25px;
+  padding: 5px;
+  margin: 20px auto;
+  max-width: 230px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 5px;
+  border-radius: 20px;
+  color: var(--text-primary); /* Asegura que el texto sea visible en modo oscuro */
+}
+
+.tab:hover {
+  background-color: var(--background-hover); /* Azul claro más oscuro */
+}
+
+.tab.active {
+  background-color: var(--primary);
+  color: var(--text-on-dark);
+}
+
+.tab-content {
+  margin-top: -50px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+  .tabs {
+    width: 100%;
+    padding: 10px;
+    top: 20px;
+  }
+
+  .tab {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+}

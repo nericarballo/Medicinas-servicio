@@ -1,0 +1,43 @@
+.card {
+  background-color: var(--container);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(213, 213, 213, 0.5);
+}
+
+.donaciones-numbers {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon-container {
+  background-color: var(--background);
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+}
+
+.card-icon {
+  font-size: 60px;
+  color: var(--primary);
+  position: relative;
+  top: 10px;
+  left: 9px;
+}
+
+.card-icon-container {
+  margin-top: -15px;
+  margin-left: -50px;
+}
+
+.labels {
+  margin-top: -30px;
+  color: var(--text-primary);
+}
+
+.card-descriptor {
+  display: block;
+  width: 50px;
+}

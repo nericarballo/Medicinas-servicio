@@ -1,0 +1,128 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--primary);
+  color: var(--container);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 30px;
+}
+
+.toggle-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.panel {
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.panel.closed {
+  transform: translateX(-100%);
+}
+
+.panel.open {
+  transform: translateX(0);
+}
+
+.article-content {
+  flex: 1;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+  }
+
+  .article-content {
+    margin-left: 0;
+  }
+}
+
+/* Media query for desktop devices */
+@media (min-width: 769px) {
+  .dashboard-container {
+    flex-direction: row;
+  }
+
+  .panel {
+    position: relative;
+    transform: translateX(0);
+  }
+
+  .toggle-button {
+    display: none;
+  }
+}
+
+/* Clases originales */
+.section {
+  background-color: var(--container);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.row {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.row:not(:first-of-type) {
+  margin-left: 294px;
+}
+
+.update {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.treatments {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.red {
+  color: var(--text-error);
+}
+

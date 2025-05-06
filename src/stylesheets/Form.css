@@ -1,0 +1,300 @@
+.header-container {
+  background-color: var(--container);
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section {
+  background-color: var(--container);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  display: block;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container-user {
+  background-color: var(--container);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.form-row.single {
+  justify-content: flex-end;
+}
+
+.password-confirm {
+  margin-right: 78px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.icon-form {
+  font-size: 24px;
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+.illness-container {
+  background-color: var(--container);
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.illness-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.medicine-options {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -15px;
+  flex-wrap: wrap;
+}
+
+.illness-option {
+  display: flex;
+  align-items: center;
+}
+
+.illness-option label {
+  margin-left: 10px;
+  color: var(--text-primary);
+}
+
+.center {
+  text-align: center;
+}
+
+.note {
+  padding: 0;
+  margin: 15px 0 -10px 0;
+  color: var(--text-secondary);
+}
+
+.treatment-container {
+  background-color: var(--container);
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.error-message {
+  text-align: center;
+  color: var(--text-error);
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.treatment-container .form-group select {
+  width: 100%; /* Ocupa el 100% del ancho */
+}
+
+.treatment-container .form-group input {
+  width: 100%; /* Ocupa el 100% del ancho */
+  margin-top: 10px; /* Añadir espacio entre los inputs */
+}
+
+.treatment-container .form-group .input-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.treatment-container .form-group .input-row > * {
+  flex: 1; /* Hacer que los inputs ocupen el mismo ancho */
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.center {
+  align-self: center;
+}
+
+.right {
+  justify-content: right;
+  margin-right: 30px;
+  position: relative;
+  right: 54px;
+}
+
+.form-deliver {
+  width: 100%;
+  max-width: 600px;
+}
+
+/*CardCreateUser*/
+
+.icon-user {
+  width: 100px;
+  height: 100px;
+  border-radius: 1000px;
+  margin-top: -50px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.count {
+  margin: 0;
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.text-user {
+  opacity: 0.6;
+  color: var(--text-secondary);
+}
+
+.create-button {
+  background-color: var(--primary);
+  color: var(--text-on-dark);
+}
+
+.create-container {
+  background-color: var(--container);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+/*FAQ*/
+
+.faq-header {
+  background-color: var(--container);
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+.faq-content {
+  background-color: var(--container);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.modal {
+  display: flex;
+  padding: 30px;
+}
+
+.modal-content-faq {
+  display: grid;
+  gap: 15px;
+}
+
+.textarea {
+  width: 100%;
+  color: var(--text-primary);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+  .faq-header {
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: flex-start;
+  }
+
+  .faq-header h2 {
+    margin-bottom: 10px;
+  }
+
+  .modal {
+    padding: 20px;
+  }
+
+  .modal-content-faq {
+    gap: 10px;
+  }
+
+  .card-create {
+    width: 80%; /* Ajustar el ancho para pantallas pequeñas */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    padding: 20px; /* Añadir relleno para mejorar la apariencia */
+  }
+
+  .create-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-row > * {
+    margin: 0 0 15px 0;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .medicine-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-deliver {
+    padding: 10px;
+  }
+
+  .illness-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .treatment-container {
+    padding: 10px;
+  }
+}

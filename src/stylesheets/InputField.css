@@ -1,0 +1,137 @@
+/* Contenedor del input */
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Estilo del input */
+.input-container input {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo del label */
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+/* Estilo del input cuando está enfocado */
+.input-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo del label cuando el input está enfocado o tiene contenido */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #007bff;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.suggestions {
+  border: 1px solid #ccc;
+  border-top-width: 0;
+  list-style: none;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #ddd;
+}
+
+
+
+.login {
+  width: 350px;
+}
+
+.form{
+  margin-bottom: 0;
+}
+
+.select {
+  width: 350px;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.select:hover {
+  cursor: pointer;
+}
+
+.illness {
+  width: 150px;
+  height: 40px;
+}
+
+.history {
+  width: 250px;
+}
+
+.textarea {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Esquinas redondeadas */
+  padding: 10px;
+  font-family: Roboto, sans-serif; /* Fuente similar a Material UI */
+  font-size: 16px;
+  box-sizing: border-box; /* Incluye el padding en el ancho y alto */
+  transition: all 0.3s ease-in-out; /* Transiciones suaves */
+  height: 200px;
+  resize: none;
+}
+
+.textarea:focus {
+  outline: none; /* Elimina el contorno por defecto */
+  border-color: #007bff; /* Cambia el color del borde al enfocarse */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocarse */
+}
+
+
+.error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(2px);
+}
+
+@media (max-width: 798px) {
+
+  .login {
+    width: 250px;
+  }
+}

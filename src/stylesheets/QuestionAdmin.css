@@ -1,0 +1,30 @@
+.question-admin-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+.question-container-admin {
+  position: static;
+  flex: 1; /* Permite que el contenedor se ajuste automáticamente */
+}
+
+.actions-column-question {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.question-btn {
+  color: var(--text-primary) !important;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .actions-column-question {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,64 @@
+.more-container {
+  width: 100%;
+  position: relative;
+  background-color: var(--container); /* Fondo gris claro cuando está cerrada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.more-container.active {
+  background-color: var(--container); /* Fondo blanco cuando está abierta */
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.title:hover {
+  background-color: var(--background-hover); /* Fondo gris claro al pasar el ratón */
+}
+
+.title-text {
+  margin-left: 20px;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.more-container.active .info {
+  display: block;
+}
+
+.arrow {
+  padding-right: 20px;
+  margin-left: auto;
+  font-size: 33px;
+  color: var(--primary);
+}
+
+.input-row {
+  display: flex;
+  gap: 10px; /* Espacio entre los inputs */
+}
+
+.input-full-width {
+  margin-top: 10px; /* Espacio vertical entre filas */
+}
+
+.input-full-width > div {
+  width: 100%; /* El input ocupa todo el ancho */
+}
+
+.input-row > div {
+  flex: 1; /* Cada input ocupa el mismo ancho */
+}
+
+.icons {
+  color: var(--primary);
+}
