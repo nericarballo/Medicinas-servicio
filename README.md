@@ -1,5 +1,3 @@
-# Hackathon 2024
-
 ### Project Setup
 
 ```sh
